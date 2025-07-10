@@ -21,6 +21,7 @@ class UserRegistrationServiceTest {
         UserRegistrationService userService = new UserRegistrationService(notificationService);
 
         String actualMessage = userService.register();
+        Mockito.verify(notificationService).send(Mockito.anyString());
         Assertions.assertEquals(actualMessage, MOCKED_MESSAGE);
     }
 }
