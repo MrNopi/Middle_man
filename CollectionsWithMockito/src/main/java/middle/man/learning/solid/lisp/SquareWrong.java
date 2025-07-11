@@ -1,4 +1,4 @@
-package middle.man.learning.solid;
+package middle.man.learning.solid.lisp;
 
 public class SquareWrong extends ShapeWrong {
     @Override
